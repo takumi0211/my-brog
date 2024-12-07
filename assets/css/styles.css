@@ -269,13 +269,18 @@ footer {
 
     /* 検索バーの調整 */
     .search-container {
-        width: auto;
-        flex: 1;
-        max-width: 200px;
+        width: 50%;
         margin-left: auto;
+        display: flex;
+        justify-content: flex-end;
     }
 
     .search-container input {
+        width: 100%;
+        max-width: 200px;
+    }
+
+    .search-container input:focus {
         width: 100%;
     }
 
@@ -438,7 +443,7 @@ footer {
 
 /* モバイル向けのメディアクエリ */
 @media screen and (max-width: 768px) {
-    /* 通常ページのナビゲーショ��調整 */
+    /* 通常ページのナビゲーション調整 */
     .nav-content {
         padding: calc(var(--base-spacing));
         flex-direction: row;
