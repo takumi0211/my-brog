@@ -279,15 +279,21 @@ footer {
         margin: 0 auto;
     }
 
-    /* 記事ページでは検索を非表示 */
+    /* 記事ページでの�索を非表示 */
     .article-container .navbar .search-container {
         display: none;
     }
 
-    /* 記事ページのナビゲーションは横並びのまま */
+    /* 記事ページのナビゲーションバーのレイアウト調整 */
     .article-container .navbar .nav-content {
         flex-direction: row;
         justify-content: center;
+        padding: calc(var(--base-spacing));
+    }
+
+    .article-container .navbar .nav-brand {
+        margin: 0;
+        text-align: center;
     }
 
     /* タグフィルターの調整 */
