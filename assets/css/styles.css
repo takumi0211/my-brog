@@ -324,6 +324,39 @@ footer {
 /* レスポンシブ対応 */
 @media (max-width: 768px) {
     .post-card-thumbnail {
-        aspect-ratio: 3 / 2;  /* モバイルでは少し縦���に */
+        aspect-ratio: 3 / 2;  /* モバイルでは少し縦に */
+    }
+} 
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 0 calc(var(--base-spacing) * 2);
+    }
+
+    .nav-brand {
+        font-size: 1.2rem;
+    }
+
+    .search-container input {
+        width: 150px;
+    }
+
+    .tag-filter {
+        gap: calc(var(--base-spacing) * 2);
+        margin-bottom: calc(var(--base-spacing) * 3);
+    }
+
+    .posts-grid {
+        grid-template-columns: 1fr;
+        gap: calc(var(--base-spacing) * 3);
+    }
+
+    .post-card h2 {
+        font-size: 1.2rem;
+    }
+
+    .post-card-excerpt {
+        font-size: 0.9rem;
     }
 } 
