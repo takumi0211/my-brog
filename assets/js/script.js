@@ -1,4 +1,21 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // �バイルでの記事ページの検索機能を制御
+    const isMobile = window.innerWidth <= 768;
+    const isArticlePage = document.querySelector('.article-container') !== null;
+    const searchContainer = document.querySelector('.search-container');
+
+    if (isMobile && isArticlePage && searchContainer) {
+        searchContainer.style.display = 'none';
+    }
+
+    // 画面サイズが変更された時の処理
+    window.addEventListener('resize', () => {
+        const isMobile = window.innerWidth <= 768;
+        if (isArticlePage && searchContainer) {
+            searchContainer.style.display = isMobile ? 'none' : 'block';
+        }
+    });
+
     // 検索機能
     const searchInput = document.getElementById('search');
     const posts = document.querySelectorAll('.post-card-link');
