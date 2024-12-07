@@ -225,8 +225,8 @@
     .article-meta,
     .article-content,
     .table-of-contents {
-        padding-left: calc(var(--base-spacing) * 4);
-        padding-right: calc(var(--base-spacing) * 4);
+        padding-left: calc(var(--base-spacing) * 3);
+        padding-right: calc(var(--base-spacing) * 3);
     }
 
     .article-header h1 {
@@ -235,6 +235,28 @@
 
     .article-lead {
         font-size: 1.1rem;
+    }
+
+    .main-quote {
+        padding: calc(var(--base-spacing) * 2);
+        font-size: 0.9rem;
+    }
+
+    .manga-quote img {
+        width: 100%;
+        height: auto;
+    }
+
+    .article-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .article-content h3 {
+        font-size: 1.2rem;
+    }
+
+    .article-content p {
+        font-size: 0.95rem;
     }
 }
 
