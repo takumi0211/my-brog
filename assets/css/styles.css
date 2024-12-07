@@ -308,8 +308,8 @@ footer {
     /* 記事グリッドの調整 */
     .posts-grid {
         grid-template-columns: 1fr;
-        gap: calc(var(--base-spacing) * 3);
-        margin: calc(var(--base-spacing) * 2) 0;
+        gap: calc(var(--base-spacing) * 2);
+        margin: calc(var(--base-spacing)) 0;
     }
 
     /* 記事カードの調整 */
@@ -318,7 +318,7 @@ footer {
     }
 
     .post-card-thumbnail {
-        aspect-ratio: 16 / 9;
+        margin-bottom: -4px;
     }
 
     .post-card-content {
@@ -332,11 +332,12 @@ footer {
 
     .post-card-excerpt {
         font-size: 0.9rem;
-        margin-bottom: calc(var(--base-spacing) * 2);
+        margin-bottom: calc(var(--base-spacing));
+        -webkit-line-clamp: 2;
     }
 
     .post-card-tags {
-        flex-wrap: wrap;
+        margin-top: calc(var(--base-spacing));
     }
 
     /* フッターの調整 */
@@ -385,7 +386,7 @@ footer {
     padding: calc(var(--base-spacing) * 3);
 }
 
-/* レスポンシ���対応 */
+/* レスポンシブ対応 */
 @media (max-width: 768px) {
     .post-card-thumbnail {
         aspect-ratio: 3 / 2;  /* モバイルでは少し縦に */
@@ -437,7 +438,7 @@ footer {
 
 /* モバイル向けのメディアクエリ */
 @media screen and (max-width: 768px) {
-    /* 通常ページのナビゲーション調整 */
+    /* 通常ページのナビゲーショ��調整 */
     .nav-content {
         padding: calc(var(--base-spacing));
         flex-direction: row;
