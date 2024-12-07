@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新規投稿 - My Notes</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/editor.css">
+</head>
+<body>
+    <nav class="navbar">
+        <!-- ナビゲーション -->
+    </nav>
+
+    <main class="editor-container">
+        <div class="editor-wrapper">
+            <div class="editor-panel">
+                <input type="text" id="post-title" placeholder="タイトルを入力...">
+                <input type="text" id="post-tags" placeholder="タグをカンマ区切りで入力...">
+                <textarea id="editor" placeholder="Markdownで記事を書く..."></textarea>
+                <button id="save-draft">下書き保存</button>
+                <button id="publish">公開</button>
+            </div>
+            <div class="preview-panel">
+                <div id="preview" class="markdown-body"></div>
+            </div>
+        </div>
+    </main>
+
+    <script type="module" src="assets/js/editor.js"></script>
+</body>
+</html> 
