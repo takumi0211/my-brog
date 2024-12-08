@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All You Need</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- ファビコンのみ設定 -->
+    <link rel="icon" href="./assets/icons/circular_favicon.png">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2935851985522990"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="./index.html" class="nav-brand">All You Need</a>
+            <div class="search-container">
+                <input type="search" id="search" placeholder="検索" aria-label="記事を検索">
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="tag-filter">
+            <button class="tag active" data-tag="all" role="tab" aria-selected="true">すべて</button>
+            <button class="tag" data-tag="コナン" role="tab">コナン</button>
+            <button class="tag" data-tag="哲学" role="tab">哲学</button>
+            <button class="tag" data-tag="AI" role="tab">AI</button>
+            <button class="tag" data-tag="Programming" role="tab">Programming</button>
+        </div>
+        <div class="posts-grid">
+            <a href="posts/article1.html" class="post-card-link">
+                <article class="post-card">
+                    <div class="post-card-thumbnail">
+                        <img src="assets/images/article1/人生死あり_サムネ.jpeg" 
+                             alt="人生死あり修短は命なり"
+                             loading="lazy">
+                    </div>
+                    <div class="post-card-content">
+                        <div class="post-card-meta">
+                            <time datetime="2024-08-16">2024.08.16</time>
+                            <span class="reading-time">10分</span>
+                        </div>
+                        <h2>人生死あり、修短は命なり</h2>
+                        <p class="post-card-excerpt">
+                            今回は「名探偵コナン」のアニメを見ていた時に気になった言葉について深掘りしていくことにします。
+                        </p>
+                        <div class="post-card-tags">
+                            <span class="tag">哲学</span>
+                            <span class="tag">コナン</span>
+                        </div>
+                    </div>
+                </article>
+            </a>
+
+            <a href="posts/article2.html" class="post-card-link">
+                <article class="post-card">
+                    <div class="post-card-thumbnail">
+                        <img src="assets/images/article2/サムネ.jpeg" 
+                             alt="OpenAI o1-miniで素因数分解ゲームを作る。"
+                             loading="lazy">
+                    </div>
+                    <div class="post-card-content">
+                        <div class="post-card-meta">
+                            <time datetime="2024-09-18">2024.09.18</time>
+                            <span class="reading-time">3分</span>
+                        </div>
+                        <h2>OpenAI o1-miniで素因数分解ゲームを作る。-AIとの付き合い方-</h2>
+                        <p class="post-card-excerpt">
+                            今日は9/12にリリースされて今話題のOpenAIのo1を用いて、ゲームを作った話をしたいと思います。
+                        </p>
+                        <div class="post-card-tags">
+                            <span class="tag">AI</span>
+                            <span class="tag">Programming</span>
+                        </div>
+                    </div>
+                </article>
+            </a>
+
+            <a href="posts/article3.html" class="post-card-link">
+                <article class="post-card">
+                    <div class="post-card-thumbnail">
+                        <img src="assets/images/article3/サムネ3.jpeg" 
+                             alt="ChatGPTの中身はコナン君!? -LLMの仕組みをアナロジーする-"
+                             loading="lazy">
+                    </div>
+                    <div class="post-card-content">
+                        <div class="post-card-meta">
+                            <time datetime="2024-11-11">2024.11.11</time>
+                            <span class="reading-time">10分</span>
+                        </div>
+                        <h2>ChatGPTの中身はコナン君!? -LLMの仕組みをアナロジーする-</h2>
+                        <p class="post-card-excerpt">
+                            お久しぶりです。今回はChatGPTの仕組みについて考えていきたいと思います。
+                        </p>
+                        <div class="post-card-tags">
+                            <span class="tag">AI</span>
+                            <span class="tag">コナン</span>
+                            <span class="tag">Programming</span>
+                        </div>
+                    </div>
+                </article>
+            </a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 All You Need. All rights reserved.</p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
