@@ -507,3 +507,45 @@
     margin: 0 auto;  /* カードを中央寄せ */
     max-width: 800px;  /* カードの最大幅を設定 */
 }
+
+/* 関連記事のレスポンシブ対応 */
+@media screen and (max-width: 768px) {
+    .grid-card-content {
+        flex-direction: column;  /* 縦並びに変更 */
+    }
+
+    .grid-card-image {
+        width: 100%;  /* 画像幅を100%に */
+        height: 200px;  /* 高さを固定 */
+        margin-top: 1em;  /* 上部に余白追加 */
+        order: -1;  /* 画像を上部に配置 */
+    }
+
+    .grid-card {
+        padding: 1em;  /* パディングを縮小 */
+    }
+
+    .grid-container {
+        padding: 0 1em;  /* 左右の余白を縮小 */
+    }
+
+    .grid-card-title {
+        font-size: 1.2em;  /* タイトルサイズを縮小 */
+        margin-bottom: 0.5em;
+    }
+
+    .grid-card-excerpt {
+        font-size: 0.9em;  /* 抜粋文のサイズを縮小 */
+        margin-bottom: 0.8em;
+    }
+
+    .related-section {
+        margin-top: 2em;  /* 上部マージンを縮小 */
+        padding: 2em 0;  /* パディングを縮小 */
+    }
+
+    .related-section h3 {
+        font-size: 1.3em;  /* 見出しサイズを縮小 */
+        margin-bottom: 1.5em;
+    }
+}
